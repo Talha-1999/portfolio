@@ -1,0 +1,62 @@
+.contact{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+
+}
+.contact > h2{
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 2rem;
+}
+.contact > h2 > span{
+    color: #f9b028;
+}
+.contact>h4{
+    text-align: center;
+    margin-top: 2rem;
+}
+.contact>h4>a{
+    color: #f9b028;
+}
+/* .form{ */
+    /* background-color: aquamarine; */
+    /* min-height: 80vh; */
+/* } */
+.form >div{
+    max-width: 50%;
+    margin: auto;
+    padding-top: 3rem;
+    /* background-color: #f9b028; */
+}
+
+.mainForm{
+    display: block;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+.mainForm >div{
+    flex: 1;
+    /* background-color: bisque; */
+    margin: 1rem;
+}
+.mainForm >div>Button{
+    height: 40px;
+    width: 100px;
+    margin-bottom: 2rem;
+}
+.name{
+    height: 40px;
+}
+.name:focus{
+    border: 2px solid #f9b028;
+}
+.message{
+    height: 8rem;
+}
+.message:focus{
+    border: 2px solid #f9b028;
+}
+@media screen and (max-width:700px) {
+    .form > div {
+    max-width: 80%;
+    }
+}

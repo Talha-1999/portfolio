@@ -1,0 +1,165 @@
+.header{
+    position: sticky;
+    top: 0;
+    width: calc(100%);
+    height: fit-content;
+    display: flex;
+    /* border: 1px solid rgb(29, 29, 29); */
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgb(9, 9, 9);
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.logo{
+    flex: 1;
+    margin: auto;
+    margin-left: 5%;
+}
+.logoImg{
+    font-size: 2.2rem;
+}
+.Icon{
+    margin:30px;
+    /* margin-right:50px; */
+}
+.Icon:hover{
+    color: rgba(254, 169, 12, 0.924);
+}
+.headings{
+    flex: 2;
+    display: flex;
+    border-radius: 100px;
+    flex-direction: row;
+    min-height: 60px;
+    justify-content:space-evenly;
+    background-color: rgba(162, 159, 159, 0.159);
+    padding-right: 20px;
+    align-items: center;
+    margin: 6px;
+}
+.Icons{
+    flex:1;
+}
+.headings > div{
+    padding: 10px;
+    color: #FFB52E !important;
+    font-size: smaller;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.headings >div:nth-child(1){
+    background: transparent;
+    color: whitesmoke;
+}
+.headings >div:nth-child(1):hover{
+    color: whitesmoke !important;
+}
+.headings >div:nth-child(1):hover::before{
+    background: #FFB52E;
+}
+.headings >div:nth-child(2){
+    background: transparent;
+    color: whitesmoke;
+}
+.headings >div:nth-child(2):hover{
+    color: whitesmoke !important;
+}
+.headings >div:nth-child(2):hover::before{
+    background: #FFB52E;
+}
+.headings >div:nth-child(3){
+    background: transparent;
+    color: whitesmoke;
+}
+.headings >div:nth-child(3):hover{
+    color: whitesmoke !important;
+}
+.headings >div:nth-child(3):hover::before{
+    background: #FFB52E;
+}
+.headings >div:nth-child(4){
+    background: transparent;
+    color: whitesmoke;
+}
+.headings >div:nth-child(4):hover{
+    color: whitesmoke !important;
+}
+.headings >div:nth-child(4):hover::before{
+    background: #FFB52E;
+}
+.headings >div:nth-child(5){
+    background: transparent;
+    color: whitesmoke;
+}
+.headings >div:nth-child(5):hover{
+    color: whitesmoke !important;
+}
+.headings >div:nth-child(5):hover::before{
+    background: #FFB52E;
+}
+
+.headings >div::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.headings >div:hover::before{
+    width: 100%;
+    background:#FFB52E;
+}
+
+/* .headings > div:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #FFB52E;
+    border-radius: 20px;
+} */
+
+
+.MobileheaderMenu{
+    width: calc(100%);
+    height: auto;
+    background-color: rgb(19, 18, 18);
+    position: absolute;
+    top: 80px;
+    z-index: -1;
+
+}
+.MobileheaderMenu >div{    
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    width: calc(50%);
+    margin: auto;
+    flex-wrap: wrap;
+}
+.MobileheaderMenu >div >div{
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.MobileheaderMenu >div >div:hover{
+    color: rgba(254, 169, 12, 0.924);
+    
+}
+@media screen and (max-width:700px) {
+    .logo{
+    margin-left: 10%;
+    }   
+}

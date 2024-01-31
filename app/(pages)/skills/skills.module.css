@@ -1,0 +1,92 @@
+
+.skills{
+    /* min-height: auto; */
+    /* padding-bottom: 7rem; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+    /* background-color: rgb(165, 63, 63); */
+}
+.skills > h2{
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 2rem;
+}
+.skills > h2 > span{
+    color: #f9b028;
+}
+
+.skills_box{
+    width: 90%;
+}
+
+.skills_row{
+    padding-top: 4rem;
+    display: flex;
+    /* justify-content: space-between;      */
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    /* background: orchid; */
+}
+
+.skills_column{
+    flex: 1;
+}
+
+.title{
+    font-size: 1.6rem;
+    margin: 1.6rem;
+}
+
+.skills_content{
+    position: relative;
+    border: 1px solid #f9b028;
+    border-radius: .6rem;
+    padding: .5rem;
+    margin: 1.6rem;
+}
+.progress {
+    padding: .4rem 0;
+}
+
+.progress:nth-child(1) > .bar >span{
+    width: 80%;
+} 
+
+.progress:nth-child(2) > .bar >span{
+    width: 70%;
+} 
+.progress:nth-child(3) > .bar >span{
+    width: 65%;
+} 
+.progress:nth-child(4) > .bar >span{
+    width: 50%;
+} 
+
+.progress > h3{
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.progress > h3 > span{
+    color: #f9b028;
+}
+.bar{
+    height: 1.2rem;
+    border-radius: .6rem;
+    /* border: 0px solid #f9b028; */
+    padding: .3rem;
+    margin: 1rem 0;
+}
+
+.bar > span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #f9b028;
+}
+
+@media screen and (max-width:720px) {
+    .skills_row{
+        flex-direction: column;
+    }
+}

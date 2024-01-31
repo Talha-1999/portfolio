@@ -1,0 +1,109 @@
+.body{
+    /* background-color: aqua; */
+    /* min-height: auto; */
+    width: 100vw;
+    margin: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+}
+.body > h2{
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.body > h2 > span{
+    color: #f9b028;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    align-items: center;
+    margin-top: 2rem;
+}
+.Mainmenu{
+    flex: 1;
+    width: 90vw;
+    /* background-color: blueviolet; */
+    margin: 2rem;
+}
+.Mainmenu >div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    width: 60%;
+    margin: auto;
+    /* background-color: pink; */
+}
+
+.Mainmenu >div >div{
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.8rem;
+    margin: 2px;
+    cursor: pointer;
+    /* background-color: orange; */
+}
+.Mainmenu > div> div{
+    color: white;
+}
+.Blogs{
+    flex: 1;
+    width: 90vw;
+    /* background-color: yellow; */
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+.Blogs >div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(33, 29, 29, 0.876);
+    border-radius: 10px;
+    margin: 10px;
+    width: 30%;
+    /* background-color: aqua; */
+}
+
+.Blogs >div>div>span{
+    font-size: large;
+    color: #f9b028;
+}
+.Blogs >div>div>p{
+    font-size: medium;
+    color: rgb(222, 221, 221);
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-height: 1.5em;        /* fallback */
+}
+
+.BlogImg{
+    width: 100%;
+    /* height: 50%; */
+    border-radius: 5px;
+}
+
+@media screen and (max-width:620px) {
+    .Blogs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Mainmenu >div{
+        width: 80%;
+    }
+    .Blogs >div{
+        width: 80%;
+        margin: 20px 0 0 0;
+    }
+    
+}

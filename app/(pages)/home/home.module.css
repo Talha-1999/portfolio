@@ -1,0 +1,152 @@
+.main {
+    min-height: 100vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+
+  }
+  .description{
+    display: flex;
+    min-height: 90vh;  
+  }
+  .info{
+    flex: 1;
+    /* background-color: rgb(30, 75, 75); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    font-weight: bolder;
+  }
+  .info >div>span{
+    font-size: 25px;
+  }
+  .InfoDiv{
+    /* background-color: pink; */
+    min-width: 80%;
+    /* min-width: 70%; */
+    min-height: 40%;
+    /* line-height: 1.5em;   */
+    
+  }
+  .about{
+    width: 80%;
+    min-height: 50px;
+    /* background-color: red; */
+    color: lightgray;
+    font-style:"Sans-serif";
+    line-height: 30px;
+  }
+  .aboutme{
+    min-width: 80%;
+    min-height: 50px;
+    color: black;
+    font-size: 20px;
+    line-height: 3rem;
+    /* background-color: lightblue; */
+  }
+
+  .aboutme > span{
+    font-style:"Sans-serif";
+  }
+  .Buttons{
+    display: flex;
+    align-items: center;
+    width: 84%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* background-color: aquamarine; */
+  }
+  .Buttons >div{
+    padding: 10px;
+  }
+  .Buttons >div > Button{
+    height: 50px;
+    background: #f9b028 !important;
+    border-radius: 10px;
+    color: whitesmoke !important;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+  }
+  .Buttons >div > Button:nth-child(1){
+    background: transparent;
+    color: #f9b028;
+  }
+  .Buttons >div > Button:nth-child(1):hover{
+    color: #f9b028 !important;
+  }
+  .Buttons >div > Button:nth-child(1):hover::before{
+    background: #f9b028;
+  }
+
+  .Buttons > div > Button::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black !important;
+    z-index: -1;
+    color: #f9b028 !important;
+    transition: .5s;
+    
+  }
+  .Buttons > div > Button:hover:before{
+    width: 100%;
+    border: 1px solid #f9b028;
+
+  }
+  /* .Buttons >div > Button:hover{
+    color: #f9b028 !important;
+    background-color: whitesmoke !important;
+    border: 2px solid #f9b028
+
+  } */
+  .avatar{
+    flex: 1;
+    min-width: 10vw;
+  }
+  .Name{
+    font-size: 52px;
+    font-style:"Sans-serif";
+  
+    background: -webkit-linear-gradient(#FFFFFF, #FFB52E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  }
+  .Name >span{
+    font-size: 52px;
+    font-style:"Sans-serif";
+    color: #FFB52E;
+  
+    background: -webkit-linear-gradient(#FFFFFF, #FFB52E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  }
+  .Text{
+    font-size: 52px;
+    font-style:"Sans-serif";
+    color: #FFB52E;
+    background: -webkit-linear-gradient(#FFFFFF, #FFB52E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 100px;
+  }
+  .spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width:780px) {
+    .avatar{
+      display: none;
+    }
+    .info{
+    text-align: center;
+    }
+    .Buttons{
+      justify-content: center;
+    }
+  }
